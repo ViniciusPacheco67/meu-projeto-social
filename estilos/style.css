@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url('../imagen/back.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #9ab6b2;
+}
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #9ab6b2;
+  font-size: 24px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Introdução */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.intro img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Seções */
+section {
+  margin-bottom: 40px;
+}
+h2 {
+  margin-bottom: 10px;
+  color: #9ab6b2;
+}
+
+/* Projetos */
+.cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgba(194, 219, 223, 0.336);
+  color: #000000;
+  padding: 20px;
+  flex: 1 1 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+  box-shadow: 0 2px 4px #5d5d5e;
+  cursor: pointer;
+
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #ffffff;
+}
+
+.card a:hover {
+    color: #621696;
+    
+}
+
+#rede {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 40px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(194, 219, 223, 0.384);
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.redes:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.redes i {
+  font-size: 34px;
+}
+
+.redes a {
+  text-decoration: none;
+  
+ 
+}
+
+.icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#icon-git {
+  color: green;
+}
+
+#icon-insta {
+  color:  rgb(93, 14, 167);
+}
+
+#icon-zapp {
+  color: greenyellow;
+}
+
+#icon-yt {
+  color: red;
+}
+
+.redes p {
+  color: #ffffff;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 600px ) {
+  header h1 {
+    font-size: 2em;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  #rede {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  .redes {
+    width: 80%;
+    height: 70px;
+  }
+
+  .redes i {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #9ab6b2;
+}
